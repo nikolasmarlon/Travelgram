@@ -16,15 +16,15 @@
     --font-family: "Poppins", serif;
 
     --heading1: bold 32px/125% var(--font-family);
-    --Paragraph: 16px/150% var(--font-family);
-    --Paragraph-md: 14px/170% var(--font-family);
-    --Paragraph-sm: 12px/170% var(--font-family);
+    --paragraph: 16px/150% var(--font-family);
+    --paragraph-md: 14px/170% var(--font-family);
+    --paragraph-sm: 12px/170% var(--font-family);
     
 
 }
 
 body{
-    font: var(--Paragraph);
+    font: var(--paragraph);
     color: var(--text-color-secondary);
     background-color: var(--background-color);
 }
