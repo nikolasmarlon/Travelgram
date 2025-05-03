@@ -1,9 +1,15 @@
-
-/* Reset css */
+/* Reset CSS */
+*::before, *::after, *{
+    box-sizing: border-box; /* faz com que o padding e a borda não aumentem o tamanho do elemento */
+}
+  
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font: inherit;  /* herda a fonte do elemento pai */
+  
+      -webkit-font-smoothing: antialiased; /* deixa as fontes mais nítidas */
+      -moz-osx-font-smoothing: grayscale; /* deixa as fontes mais nítidas */
 }
 
 :root{
