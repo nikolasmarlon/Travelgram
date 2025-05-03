@@ -4,8 +4,6 @@ header{
 
 header .container {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
     gap: 2rem;
     flex-direction: column;
 }
@@ -63,11 +61,12 @@ header .container {
     header .container {
         
         flex-direction: row;
-        align-items: center;
+        align-items:  center;       
+        justify-content: space-between;
     }
     #profile{
         flex-direction: row;
-
+        align-items: center;
 
         & img{
             width: 11rem;
