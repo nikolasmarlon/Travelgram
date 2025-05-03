@@ -1,28 +1,33 @@
 header{
-    padding-block: 32px;
+    padding-block: 2rem;
 }
 
 header .container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
 }
 
 #profile{
     display: flex;
-    gap: 32px;
-    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
 
+    & img{
+        width: 7.5rem;
+        height: 7.5rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
 }
 
-#profile div{    
-    max-width: 384px;
-}
+
 
 #profile h1{
     font: var(--heading1);
     color: var(--text-color-primary);
-    margin-bottom: 8px;
+    margin-bottom: .5rem;
 }
 
 #profile p{
@@ -34,18 +39,42 @@ header .container {
 
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 1rem;
 
-    width: 280px;
+    width: 17rem;
 }
 
 #info li{
     display: flex;
-    align-items: center;
     gap: 8px;
     font: var(--paragraph);
     color: var(--text-color-secondary);
 }
 #info span{
     font: var(--paragraph-md);
+}
+
+
+@media (width >= 80em) {
+
+
+    header .container {
+        
+        flex-direction: row;
+        align-items:  center;       
+        justify-content: space-between;
+    }
+    #profile{
+        flex-direction: row;
+        align-items: center;
+
+        & img{
+            width: 11rem;
+            height: 11rem;
+        }
+    }
+
+    #profile div{    
+        max-width: 24rem;
+    }
 }
